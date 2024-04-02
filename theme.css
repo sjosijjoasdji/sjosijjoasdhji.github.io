@@ -1,0 +1,746 @@
+.traffic-holiday-theme .brand {
+  min-width: 100px;
+}
+	
+.traffic-holiday-theme #theme-stage img{
+  width: 100%;
+}
+
+.traffic-holiday-theme #theme-stage .theme-big-active{
+width: 100%;
+height: 400px;
+position: absolute;
+top: 50%;
+margin-top: -328px;
+}
+
+.traffic-holiday-theme #theme-stage .theme-big-active .theme-fallback{
+width: 950px;
+height: 400px;
+position: absolute;
+top: 75px;
+left: 50%;
+margin-left: -475px;
+}
+
+.traffic-holiday-theme #theme-stage.static-mode .theme-big-active .theme-fallback{
+display: block;
+}
+
+.traffic-holiday-theme #theme-stage.static-mode .theme-big-active svg{
+display: none;
+}
+
+.traffic-holiday-theme #streets-and-tunnels,
+.traffic-holiday-theme #traffic-controls,
+.traffic-holiday-theme .car-track{
+position: absolute;
+display: block;
+top: 75px;
+width: 960px;
+left: 50%;
+margin-left: -480px;
+z-index: 0;
+}
+
+.traffic-holiday-theme .car-track{
+z-index: 1;
+width: 928px;
+margin-left: -464px;
+overflow: hidden;
+height: 120px;
+}
+
+.traffic-holiday-theme #traffic-controls{
+z-index: 3;
+pointer-events: none;
+}
+
+.traffic-holiday-theme #traffic-controls [data-action],
+.traffic-holiday-theme #traffic-controls g{
+pointer-events: all;
+}
+
+.traffic-holiday-theme #traffic-controls [data-action]:hover{
+cursor: pointer;
+}
+
+.traffic-holiday-theme .car-track ul{
+display: block;
+width: 1875px;
+height: 120px;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.traffic-holiday-theme .car-track ul.tray-two{
+left: 1875px;
+}
+
+.traffic-holiday-theme .car-track .track{
+margin-left: -476px;	
+}
+
+.traffic-holiday-theme #top-car-track.car-track{
+top: 117px;
+}
+
+.traffic-holiday-theme #bottom-car-track.car-track{
+top: 308px;
+}
+
+.traffic-holiday-theme #bottom-car-track.car-track ul.tray-two{
+left: -1875px;
+}
+
+.traffic-holiday-theme #top-car-track.car-track ul{
+-moz-transform: translate3d(0,0,0);
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+.traffic-holiday-theme #bottom-car-track.car-track ul{
+/* Flip track direction */
+-moz-transform: scaleX(-1) translate3d(0,0,0);
+-webkit-transform: scaleX(-1) translate3d(0,0,0);
+transform: scaleX(-1) translate3d(0,0,0);
+}
+
+.traffic-holiday-theme .car-track .car{
+display: inline-block;
+background: url('/web/20160101010804im_/http://www-tc.pbskids.org/shell/themes/traffic-holiday/images/cars-sprite_wheels.svg') 50% 0 no-repeat,
+			url('/web/20160101010804im_/http://www-tc.pbskids.org/shell/themes/traffic-holiday/images/cars-sprite_chassis.svg') 50% 0 no-repeat;
+width: 250px;
+height: 120px;
+}
+
+.no-svg .traffic-holiday-theme .car-track .car{
+background: url('/web/20160101010804im_/http://www-tc.pbskids.org/shell/themes/traffic-holiday/images/cars-sprite.png') 50% 0 no-repeat;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car .show-link,
+.traffic-holiday-theme #theme-stage .car-track .car.games a{
+display: block;
+height: 100%;
+width: 100%;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car .show-graphic{
+width: 30%;
+display: block;
+margin: 0 auto;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car .show-title,
+.traffic-holiday-theme #theme-stage .car-track .car.games em{
+position: absolute;
+left: -999em;
+}
+
+/* Specific car styles */
+
+.traffic-holiday-theme #theme-stage .car-track .car-one.car{
+width: 120px;
+height: 92px;
+background-position: 0 -370px;
+margin: 0 0 0 66px;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-one.car .show-graphic{
+width: 53%;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-two.car{
+height: 110px;
+width: 212px;
+background-position: -19px -122px;
+margin: 9px 112px 0 192px;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-two.car .show-graphic{
+width: 29.5%;
+margin-top: 4px;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-three.car{
+width: 206px;
+background-position: -12px 6px;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-three.car .show-graphic{
+display: none;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-four.car{
+width: 142px;
+height: 92px;
+background-position: -128px -371px;
+margin: 0 0 0 230px;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-four.car .show-graphic{
+width: 44%;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-five.car{
+background-position: -20px -243px;
+height: 110px;
+width: 212px;
+margin: 9px 0 0 206px;
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-five.car .show-graphic{
+width: 30.5%;
+margin-top: 2px;
+}
+
+.traffic-holiday-theme .cars-animated #top-car-track.car-track ul{
+  animation:         tray-one-go-top 30s linear infinite;
+  -webkit-animation: tray-one-go-top 30s linear infinite;
+}
+
+.traffic-holiday-theme .cars-animated #bottom-car-track.car-track ul{
+  animation:         tray-one-go-bottom 30s linear infinite; 
+  -webkit-animation: tray-one-go-bottom 30s linear infinite;
+}
+
+.traffic-holiday-theme .cars-paused #top-car-track.car-track ul,
+.traffic-holiday-theme .cars-paused #bottom-car-track.car-track ul,
+.traffic-holiday-theme .cars-stopped #top-car-track.car-track ul,
+.traffic-holiday-theme .cars-stopped #bottom-car-track.car-track ul{
+  animation-play-state:paused;
+  -webkit-animation-play-state:paused; 
+}
+
+/* Initial Object State */
+.traffic-holiday-theme .simple-view #bottom-tree,
+.traffic-holiday-theme .simple-view #top-tree,
+.traffic-holiday-theme .simple-view #empty-sign,
+.traffic-holiday-theme .simple-view #stop-light,
+.traffic-holiday-theme .simple-view #stop-light-icicle,
+.traffic-holiday-theme .simple-view #lamp,
+.traffic-holiday-theme .simple-view #icicles-left,
+.traffic-holiday-theme .simple-view #icicles-right,
+.traffic-holiday-theme .simple-view path.tunnel,
+.traffic-holiday-theme .simple-view #bottom-tree.show,
+.traffic-holiday-theme .simple-view #top-tree.show,
+.traffic-holiday-theme .simple-view #empty-sign.show,
+.traffic-holiday-theme .simple-view #stop-light.show,
+.traffic-holiday-theme .simple-view #stop-light-icicle.show,
+.traffic-holiday-theme .simple-view #lamp.show,
+.traffic-holiday-theme .simple-view #icicles-left.show,
+.traffic-holiday-theme .simple-view #icicles-right.show,
+.traffic-holiday-theme .simple-view path.tunnel.show{
+
+animation:         none; 
+-webkit-animation: none;
+  
+  	    transform: scale(1);
+    -ms-transform: scale(1);
+-webkit-transform: scale(1);	
+}
+
+.traffic-holiday-theme #bottom-tree,
+.traffic-holiday-theme #top-tree,
+.traffic-holiday-theme #empty-sign,
+.traffic-holiday-theme #stop-light,
+.traffic-holiday-theme #stop-light-icicle,
+.traffic-holiday-theme #lamp,
+.traffic-holiday-theme #icicles-left,
+.traffic-holiday-theme #icicles-right,
+.traffic-holiday-theme path.tunnel{
+		transform: scale(0);
+	-ms-transform: scale(0);
+-webkit-transform: scale(0);
+
+   		transform-origin: 50% 100%;
+	-ms-transform-origin: bottom;
+-webkit-transform-origin: bottom;
+}
+
+.traffic-holiday-theme #stop-light,
+.traffic-holiday-theme #stop-light-icicle,
+.traffic-holiday-theme #icicles-left,
+.traffic-holiday-theme #icicles-right{
+		transform-origin: 50% 0%;
+	-ms-transform-origin: top;
+-webkit-transform-origin: top;	
+}
+
+.traffic-holiday-theme #bottom-tree.show,
+.traffic-holiday-theme #top-tree.show,
+.traffic-holiday-theme #empty-sign.show,
+.traffic-holiday-theme #stop-light.show,
+.traffic-holiday-theme #stop-light-icicle.show,
+.traffic-holiday-theme #lamp.show,
+.traffic-holiday-theme #icicles-left.show,
+.traffic-holiday-theme #icicles-right.show,
+.traffic-holiday-theme path.tunnel.show{
+  animation:         bounce-in-object .3s linear; 
+  -webkit-animation: bounce-in-object .3s linear;
+  
+
+  	    transform: scale(1);
+    -ms-transform: scale(1);
+-webkit-transform: scale(1);	
+}
+
+/* Bounce Object In */
+
+@-webkit-keyframes bounce-in-object {
+	  0% {
+	      transform: scale(.1);
+	      -webkit-transform: scale(.1);
+	  }
+	 80% {
+	      transform: scale(1.2);
+	      -webkit-transform: scale(1.2);
+	  }
+    100% {
+	      transform: scale(1);
+	      -webkit-transform: scale(1);
+	  }
+}
+
+@keyframes bounce-in-object {
+	  0% {
+	      transform: scale(.1);
+	  	  -ms-transform: scale(.1);
+	  }
+	 80% {
+	 	transform: scale(1.2);
+	 	-ms-transform: scale(1.2);
+	      
+	  }
+    100% {
+	    transform: scale(1); 
+	    -ms-transform: scale(1);  
+	  }
+}
+
+
+/* Animate Cars */
+@-moz-keyframes tray-one-go-top {
+      0% { margin-left: 0; }
+    100% { margin-left: -202.1%; }
+}
+
+@-webkit-keyframes tray-one-go-top {
+      0% { margin-left: 0; }
+    100% { margin-left: -202.1%; }
+}
+
+@keyframes tray-one-go-top {
+      0% { margin-left: 0; }
+    100% { margin-left: -202.1%; }
+}
+
+@-moz-keyframes tray-one-go-bottom {
+      0% { margin-left: 0; }
+    100% { margin-left: 202.1%; }
+}
+
+@-webkit-keyframes tray-one-go-bottom {
+      0% { margin-left: 0; }
+    100% { margin-left: 202.1%; }
+}
+
+@keyframes tray-one-go-bottom {
+      0% { margin-left: 0; }
+    100% { margin-left: 202.1%; }
+}
+
+/* Car Chassis Jiggle */
+
+.traffic-holiday-theme #theme-stage .car-track .car .show-graphic{
+  animation:         show-jiggle .25s linear infinite; 
+  -webkit-animation: show-jiggle .25s linear infinite;	
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-four.car .show-graphic{
+		  animation: none;
+  -webkit-animation: none;		
+}
+
+@-webkit-keyframes show-jiggle {
+	  0% {
+	     transform: translateY(0);
+	     -webkit-transform: translateY(0);
+	  }
+	 80% {
+	    transform: translateY(-1px);
+	    -webkit-transform: translateY(-1px);
+	  }
+    100% {
+	    transform: translateY(0);
+	    -webkit-transform: translateY(0);
+	  }
+}
+
+@keyframes show-jiggle {
+	  0% {
+	     transform: translateY(0);
+	     -ms-transform: translateY(0);
+	  }
+	 80% {
+	    transform: translateY(-1px);
+	    -ms-transform: translateY(-1px);
+	  }
+    100% {
+	    transform: translateY(0);
+	    -ms-transform: translateY(0);
+	  }
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-one.car{
+  animation:         one-chassis-jiggle .25s linear infinite; 
+  -webkit-animation: one-chassis-jiggle .25s linear infinite;
+}
+
+@-webkit-keyframes one-chassis-jiggle {
+	  0% {
+	     background-position: 0 -370px , 0 -370px;
+	  }
+	 80% {
+	     background-position:  0 -370px , 0 -372px;
+	  }
+    100% {
+	     background-position: 0 -370px , 0 -370px;
+	  }
+}
+
+@keyframes one-chassis-jiggle {
+	  0% {
+	     background-position: 0 -370px , 0 -370px;
+	  }
+	 80% {
+	     background-position:  0 -370px , 0 -372px;
+	  }
+    100% {
+	     background-position: 0 -370px , 0 -370px;
+	  }
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-two.car{
+  animation:         two-chassis-jiggle .25s linear infinite; 
+  -webkit-animation: two-chassis-jiggle .25s linear infinite;
+}
+
+@-webkit-keyframes two-chassis-jiggle {
+	  0% {
+	     background-position: -19px -122px , -19px -122px;
+	  }
+	 80% {
+	     background-position: -19px -122px , -19px -124px;
+	  }
+    100% {
+	     background-position: -19px -122px , -19px -122px;
+	  }
+}
+
+@keyframes two-chassis-jiggle {
+	  0% {
+	     background-position: -19px -122px , -19px -122px;
+	  }
+	 80% {
+	     background-position: -19px -122px , -19px -124px;
+	  }
+    100% {
+	     background-position: -19px -122px , -19px -122px;
+	  }
+}
+
+.traffic-holiday-theme #theme-stage .car-track .car-three.car{
+  animation:         plow-chassis-jiggle .25s linear infinite; 
+  -webkit-animation: plow-chassis-jiggle .25s linear infinite;
+}
+
+@-webkit-keyframes plow-chassis-jiggle {
+	  0% {
+	     background-position: -12px 6px , -12px 6px;
+	  }
+	 80% {
+	     background-position: -12px 6px , -12px 4px;
+	  }
+    100% {
+	     background-position: -12px 6px , -12px 6px;
+	  }
+}
+
+@keyframes plow-chassis-jiggle {
+	  0% {
+	     background-position: -12px 6px , -12px 6px;
+	  }
+	 80% {
+	     background-position: -12px 6px , -12px 4px;
+	  }
+    100% {
+	     background-position: -12px 6px , -12px 6px;
+	  }
+}
+
+
+.traffic-holiday-theme #theme-stage .car-track .car-five.car{
+  animation:         five-chassis-jiggle .25s linear infinite; 
+  -webkit-animation: five-chassis-jiggle .25s linear infinite;
+}
+
+@-webkit-keyframes five-chassis-jiggle {
+	  0% {
+	     background-position: -20px -243px , -20px -243px;
+	  }
+	 80% {
+	     background-position: -20px -243px , -20px -245px;
+	  }
+    100% {
+	     background-position: -20px -243px , -20px -243px;
+	  }
+}
+
+@keyframes five-chassis-jiggle {
+	  0% {
+	     background-position: -20px -243px , -20px -243px;
+	  }
+	 80% {
+	     background-position: -20px -243px , -20px -245px;
+	  }
+    100% {
+	     background-position: -20px -243px , -20px -243px;
+	  }
+}
+
+/* Static Mode */
+.traffic-holiday-theme #theme-stage.static-mode .car-track#bottom-car-track .car-one.car,
+.traffic-holiday-theme #theme-stage.static-mode .car-track#bottom-car-track .car-two.car,
+.traffic-holiday-theme #theme-stage.static-mode .car-track#bottom-car-track .car-three.car{
+display: none;
+}
+
+.traffic-holiday-theme #theme-stage.static-mode .car-track#bottom-car-track .car-four.car,
+.traffic-holiday-theme #theme-stage.static-mode .car-track#bottom-car-track .car-five.car{
+visibility: visible;	
+}
+
+/* Static Mode Mode w/ CSS3 support */
+.cssanimations .traffic-holiday-theme #theme-stage.static-mode #top-car-track.car-track ul,
+.cssanimations .traffic-holiday-theme #theme-stage.static-mode #bottom-car-track.car-track ul,
+.cssanimations .traffic-holiday-theme #theme-stage.static-mode .car-track .car,
+.cssanimations .traffic-holiday-theme #theme-stage.static-mode .car-track .car .show-graphic{
+  animation:none;
+  -webkit-animation:none; 
+}
+
+.cssanimations .traffic-holiday-theme #theme-stage.static-mode .car-track#bottom-car-track .car-one.car,
+.cssanimations .traffic-holiday-theme #theme-stage.static-mode .car-track#bottom-car-track .car-two.car,
+.cssanimations .traffic-holiday-theme #theme-stage.static-mode .car-track#bottom-car-track .car-three.car{
+display: inline-block;
+}
+
+/* Swap to static version */
+@media only screen and (max-width: 601px) {
+	.traffic-holiday-theme .theme-section #theme-stage img.theme-mini-static{
+		margin-top: 30px;
+		min-width: 430px;
+		max-width: 601px;
+		margin-left: 0;
+	}
+	
+	.traffic-holiday-theme .brand {
+		min-width: 82px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.traffic-holiday-theme .theme-section #theme-stage img.theme-mini-static{
+		margin-top: 58px;
+	}	
+}
+
+@media only screen and (max-width: 360px) {
+	.traffic-holiday-theme .theme-section #theme-stage img.theme-mini-static{
+		margin-left: -42px;
+	}	
+}
+
+
+@media only screen and (max-width: 1350px) {
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(.9);
+	  -ms-transform:scale(.9);
+	  transform:scale(.9);
+	}
+}
+
+@media only screen and (max-width: 1230px) {
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(.8);
+	  -ms-transform:scale(.8);
+	  transform:scale(.8);
+	}
+}
+
+@media only screen and (max-width: 1025px) {
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(.75);
+	  -ms-transform:scale(.75);
+	  transform:scale(.75);
+	}
+}
+@media only screen and (min-height: 800px) and (max-width: 1000px) {
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(.85);
+	  -ms-transform:scale(.85);
+	  transform:scale(.85);
+	}
+}
+
+@media only screen and (max-width: 900px) and (max-height: 700px){
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(.65);
+	  -ms-transform:scale(.65);
+	  transform:scale(.65);
+	}
+}
+
+@media only screen and (max-height: 750px) and (max-width: 1025px){
+	.traffic-holiday-theme #theme-stage .theme-big-active{	 
+	  top: -80px;
+	  margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 769px) and (max-height: 1025px) {
+	.traffic-holiday-theme #theme-stage .theme-big-active{	 
+	  -webkit-transform:scale(.65);
+	  -ms-transform:scale(.65);
+	  transform:scale(.65);
+	  
+	  
+	  top: 0px;
+	  margin-top: 0;
+	}
+}
+
+
+@media only screen and (max-height: 680px) and (max-width: 825px) and (min-width: 602px) {
+	.traffic-holiday-theme #theme-stage .theme-big-active{	 	  
+	  top: -60px;
+	  margin-top: 0;
+	}
+	.traffic-holiday-theme .scroll-panel.theme-section {
+		min-height: 356px;
+	}
+}
+
+@media only screen and (max-height: 680px) and (max-width: 1025px) and (min-width: 826px) {
+	.traffic-holiday-theme #theme-stage .theme-big-active{	 	  
+	  top: -85px;
+	  margin-top: 0;
+	}
+	
+	.traffic-holiday-theme .scroll-panel.theme-section {
+	 	min-height: 440px;
+	}
+}
+
+@media only screen and (max-height: 730px) and (min-width: 1025px) and (max-width: 1230px){ 
+	.traffic-holiday-theme #theme-stage .theme-big-active{	 	  
+	  top: -85px;
+	  margin-top: 0;
+	}
+	.traffic-holiday-theme .scroll-panel.theme-section {
+	 	min-height: 480px;
+	}
+}
+
+@media only screen and (max-height: 730px) and (min-width: 1231px) and (max-width: 1381px){ 
+	.traffic-holiday-theme #theme-stage .theme-big-active{  
+		-webkit-transform:scale(.9);
+	    -ms-transform:scale(.9);
+	    transform:scale(.9);
+	  
+	  	top: -50px;
+	  	margin-top: 0;
+	}
+
+	.traffic-holiday-theme .scroll-panel.theme-section {
+	 	min-height: 515px;
+	}
+}
+
+@media only screen and (min-height: 841px) and (max-width: 850px){ 
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(.75);
+	  -ms-transform:scale(.75);
+	  transform:scale(.75);
+	}
+}
+
+
+@media only screen and (max-height: 840px) and (min-width: 1382px){ 
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(.9);
+	  -ms-transform:scale(.9);
+	  transform:scale(.9);
+	  
+	  top: -50px;
+	  margin-top: 0;
+	}
+	
+	.traffic-holiday-theme .scroll-panel.theme-section {
+	 	min-height: 555px;
+	}
+}
+
+@media only screen and (max-height: 888px) and (max-width: 775px) and (min-width: 602px){
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(.55);
+	  -ms-transform:scale(.55);
+	  transform:scale(.55);
+	  
+	  top: -50px;
+	}
+	.traffic-holiday-theme .scroll-panel.theme-section {
+	  height: 635px !important;
+	}
+}
+
+
+@media only screen and (min-height: 1100px) and (min-width: 1382px){ 
+	.traffic-holiday-theme #theme-stage .theme-big-active{
+	  -webkit-transform:scale(1.25);
+	  -ms-transform:scale(1.25);
+	  transform:scale(1.25);
+	}
+}
+
+
+#no-flash-version,
+#full-version{
+display: none;
+}
+
+.has-flash #full-version,
+.no-flash #no-flash-version{
+display: block;
+}
+/*
+     FILE ARCHIVED ON 01:08:04 Jan 01, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:43:01 Apr 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.6
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.059
+  cdx.remote: 0.057
+  esindex: 0.009
+  LoadShardBlock: 76.649 (3)
+  PetaboxLoader3.datanode: 98.927 (5)
+  load_resource: 168.502 (2)
+  PetaboxLoader3.resolve: 122.01 (2)
+*/
